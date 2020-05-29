@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FA8072;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane layoutX="80.0" layoutY="102.0" prefHeight="264.0" prefWidth="454.0" style="-fx-background-color: #FFA07A;">
+            <children>
+                <TextFlow fx:id="outputPane" layoutX="87.0" layoutY="25.0" prefHeight="214.0" prefWidth="280.0" style="-fx-background-color: #87CEEB;" textAlignment="RIGHT" />
+            </children>
+        </AnchorPane>
+        <Spinner fx:id="numberSelector" layoutX="352.0" layoutY="40.0">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <effect>
+            <SepiaTone />
+         </effect></Spinner>
+        <Label layoutX="179.0" layoutY="33.0" text="Your number" textAlignment="CENTER" textFill="#1023b2" textOverrun="CLIP">
+            <font>
+                <Font name="Comic Sans MS" size="28.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
